@@ -11,14 +11,24 @@
 
 <body>
     <header>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Serviços</a>
-            <a href="">Localização</a>
-        </nav>
-        <button>Orçamento via whatsApp</button>
+    <div class="logo">Sublitech</div>
 
-    </header>
+    <div class="menu-right">
+        <!-- botão whatsapp -->
+
+        <!-- botão menu -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- menu lateral -->
+    <nav id="menu">
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Localização</a>
+    </nav>
+</header>
     <main>
         <h1>
             <i class="fas fa-tools"></i> Manutenção de impressoras EPSON
@@ -28,7 +38,23 @@
             <i class="fab fa-whatsapp"></i> Solicitar Orçamento via WhatsApp
         </button>
     </main>
+    <section class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+        Somos especialistas em manutenção de impressoras EPSON, com foco em
+        equipamentos sublimáticos e DTF. Trabalhamos com rapidez, qualidade e garantia.
+    </p>
+</section>
+<section class="diferenciais">
+    <h2>Por que escolher a gente?</h2>
 
+    <div>
+        <p>✔ Especialistas em sublimática</p>
+        <p>✔ Atendimento rápido</p>
+        <p>✔ Garantia no serviço</p>
+        <p>✔ Suporte via WhatsApp</p>
+    </div>
+</section>
     <section>
         <div class="servicos">
             <h2>Serviços Principais</h2>
@@ -108,6 +134,24 @@
             <button id="verMaisBtn">Ver mais</button>
         </div>
     </section>
+    <section class="cta">
+    <h2>Precisa de manutenção?</h2>
+    <p>Fale conosco agora mesmo pelo WhatsApp</p>
+
+    <button>
+        <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+    </button>
+</section>
+    <section class="localizacao">
+    <h2>Onde estamos</h2>
+    <p>Atendemos em São Mateus - ES e região</p>
+
+    <!-- opcional -->
+    <iframe 
+        src="https://www.google.com/maps/embed?..."
+        width="100%" height="250" style="border:0;">
+    </iframe>
+</section>
     <script src="script.js"></script>
 </body>
 
