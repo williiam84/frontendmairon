@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de impressoras EPSON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Serviços</a>
+            <a href="">Localização</a>
+        </nav>
+        <button>Orçamento via whatsApp</button>
+
+    </header>
+    <main>
+        <h1>
+            <i class="fas fa-tools"></i> Manutenção de impressoras EPSON
+        </h1>
+        <p>Especializados em impressoras sublimáticas, adaptadas e DTF</p>
+        <button>
+            <i class="fab fa-whatsapp"></i> Solicitar Orçamento via WhatsApp
+        </button>
+    </main>
+
+    <section>
+        <div class="servicos">
+            <h2>Serviços Principais</h2>
+            <div class="coluna1">
+                <div>
+                    <i class="fas fa-print"></i>
+                    <p>Manutenção EPSON e sublimática</p>
+                </div>
+                <div>
+                    <i class="fas fa-unlock"></i>
+                    <p>Desbloqueio Epson T3170</p>
+                </div>
+                <div>
+                    <i class="fas fa-cogs"></i>
+                    <p>Manutenção de impressoras DTF</p>
+                </div>
+                <div>
+                    <i class="fas fa-tint"></i>
+                    <p>Instalação de Dispenser</p>
+                </div>
+            </div>
+            <div class="coluna2">
+                <div>
+                    <i class="fas fa-brush"></i>
+                    <p>Limpeza Profunda & Troca de tinta</p>
+                </div>
+                <div>
+                    <i class="fas fa-redo"></i>
+                    <p>Reset de Almofadas</p>
+                </div>
+                <div>
+                    <i class="fas fa-microchip"></i>
+                    <p>Reparo de placas lógicas</p>
+                </div>
+                <div>
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Manutenção Preventiva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="depoimentos" style="gap: 30px;">
+        <div class="text">
+            <h2>Avaliações</h2>
+        </div>
+        <div class="btn">
+            <button id="btnavaliacao">Deixar a minha avaliação <strong
+                    style="color: #fca311; font-size: 15pt;">★</strong>
+            </button>
+        </div>
+        <form id="formdepoimento" style="display: none;" action="https://apisistemadeavaliacao.onrender.com/avaliacoes"
+            method="post">
+
+            <input type="text" placeholder="Nome" name="nome" id="nome" required>
+
+            <textarea name="comentario" id="comentario" placeholder="Digite seu comentário" required></textarea>
+
+            <!-- Nota -->
+            <label>Nota:</label>
+            <select name="nota" required>
+                <option value="">Escolha</option>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+            </select>
+
+            <button type="submit">Enviar Avaliação</button>
+
+        </form>
+        <div class="avaliacoes-container">
+            <h2>Avaliações</h2>
+
+            <div id="lista-avaliacoes" class="avaliacoes-lista" style="display: flex; flex-direction: column;"></div>
+
+            <button id="verMaisBtn">Ver mais</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

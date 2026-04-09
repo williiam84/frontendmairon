@@ -1,0 +1,470 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #003366;
+}
+
+/* Header e Navbar */
+header {
+    background-color: #003366;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #fca311;
+}
+
+header button {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+header button:hover {
+    background-color: #128c4a;
+}
+
+/* Main */
+main {
+    text-align: center;
+    padding: 50px 20px;
+    background: #0056b3;
+    color: #f8f9fa;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+main h1 i {
+    color: #fca311;
+    margin-right: 10px;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+main button {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+main button i {
+    margin-right: 8px;
+}
+
+main button:hover {
+    background-color: #128c4a;
+}
+
+/* Serviços */
+.servicos {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.servicos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #003366;
+}
+
+.servicos .coluna1, .servicos .coluna2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.servicos .coluna1 div, .servicos .coluna2 div {
+    background-color: #fff;
+    width: 45%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicos .coluna1 div:hover, .servicos .coluna2 div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.servicos div i {
+    font-size: 2rem;
+    color: #e63946;
+    margin-right: 15px;
+}
+
+.servicos div p {
+    font-size: 1.1rem;
+    color: #003366;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos .coluna1 div, .servicos .coluna2 div {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        display: flex;
+        gap: 10px;
+    }
+}
+/* Seção geral */
+.depoimentos {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Título */
+.depoimentos h2 {
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Botão */
+form button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #128c4a;
+}
+
+/* Estrelas (visualização) */
+.estrelas {
+    color: #fca311;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.estrelas i {
+    margin-right: 4px;
+}
+
+/* Lista de depoimentos */
+.lista-depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.depoimento {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.depoimento p {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.depoimento span {
+    font-weight: bold;
+    color: #e63946;
+}
+
+/* Hover efeito */
+.depoimento:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* ⭐ Estrelas clicáveis (opcional avançado) */
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.rating i {
+    color: #ccc;
+    transition: 0.2s;
+}
+
+.rating i.active {
+    color: #fca311;
+}
+.depoimentos .btn > button{
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+
+}
+/* Seção */
+.depoimentos {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+.depoimentos .text h2 {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+.depoimentos .btn{
+    width: 350px;
+}
+/* Botão abrir formulário */
+.depoimentos .btn button {
+    background: linear-gradient(135deg, #0056b3, #003366);
+    color: #fff;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimentos .btn button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Formulário */
+#formdepoimento {
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Inputs */
+#formdepoimento input,
+#formdepoimento textarea,
+#formdepoimento select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* Focus bonito */
+#formdepoimento input:focus,
+#formdepoimento textarea:focus,
+#formdepoimento select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0,86,179,0.3);
+}
+
+/* Textarea */
+#formdepoimento textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Label */
+#formdepoimento label {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Select */
+#formdepoimento select {
+    cursor: pointer;
+}
+
+/* Botão enviar */
+#formdepoimento button {
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formdepoimento button:hover {
+    background: #128c4a;
+    transform: scale(1.02);
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}.avaliacoes-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+/* lista */
+.avaliacoes-lista {
+    display: flex;
+    flex-direction: column; /* 👈 importante */
+    gap: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* card */
+.avaliacao {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 5px solid #0056b3;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* topo */
+.topo-avaliacao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.nome {
+    font-weight: bold;
+    color: #003366;
+}
+
+.estrelas {
+    color: #fca311;
+}
+
+/* comentário */
+.comentario {
+    color: #444;
+}
+
+/* data */
+.data {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+}
+
+/* botão */
+#verMaisBtn {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#verMaisBtn:hover {
+    background: #003366;
+}
